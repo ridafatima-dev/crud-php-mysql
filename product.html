@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Form</title>
+
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+.container{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.form{
+width: 400px;
+padding: 20px;
+border-radius: 10px;
+background-color: white;
+box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+}
+
+.form h2{
+text-align: center;
+margin-bottom: 15px;
+color: #333;
+}
+
+.form label{
+display: block;
+margin: 10px 0 5px;
+font-weight: bold;
+}
+
+.form input{
+width: 100%;
+padding: 8px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.submit input{
+margin-top: 15px;
+background-color: #667eea;
+color: white;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.submit input:hover{
+background-color: #5a67d8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="form">
+
+<h2>Add Product</h2>
+
+<form action="insert.php" method="post">
+
+<label>Name</label>
+<input type="text" name="Name" required>
+
+<label>Brand</label>
+<input type="text" name="brand" required>
+
+<label>Price</label>
+<input type="number" name="Price" required>
+
+<label>Quantity</label>
+<input type="number" name="Quantity" required>
+
+<div class="submit">
+<input type="submit" value="Submit Record">
+</div>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
